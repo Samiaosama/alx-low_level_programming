@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point  
+ * main - Entry point
+ * the computer it is compiled  
  * Return: always (0)
  */
 
