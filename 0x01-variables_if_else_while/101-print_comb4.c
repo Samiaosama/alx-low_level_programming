@@ -6,36 +6,28 @@
 */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-	int k = '0';
+	int c, c_two, c_three;
 
-	while (i <= '7')
+	for (c = 48; c <= 55; c++)
 	{
-		while (j <= '8')
+		for (c_two = c + 1; c_two <= 56; c_two++)
 		{
-			while (k <= '9')
+			for (c_three = c_two + 1; c_three <= 57; c_three++)
 			{
-			if (i < j && j < k)
-			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (!(i == '7' && j == '8' && k == '9'))
+
+				putchar(c);
+				putchar(c_two);
+				putchar(c_three);
+				if (c != 55 || c_two != 56 || c_three != 57)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
+
 				}
-
 			}
-
 		}
-		k = '0';
-		j++;
 	}
-	j = '0';
-	i++;
+	putchar(10);
+	return (0);
 }
-putchar('\n');
-return (0);
-}
+
