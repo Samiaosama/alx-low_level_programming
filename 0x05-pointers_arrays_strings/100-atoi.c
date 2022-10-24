@@ -31,10 +31,10 @@ int _atoi(char *s)
 					{
 						break;
 					}
-					
+
 					c++;
 				}
-				
+
 				ni *= min;
 				return (ni);
 }
