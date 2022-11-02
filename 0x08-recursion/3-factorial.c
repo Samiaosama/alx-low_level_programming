@@ -1,19 +1,25 @@
 #include "main.h"
 /**
- * factorial - factorial of a given number
- * @n: pointer block of memory to fill
- * Return: factorial
+ * factorial - factorial of int
+ * @n:int
+ * Return:int
  */
-
 int factorial(int n)
 {
-	if (n == 0) /*Base condition*/
+	int x;
 
-		 return (1)
-	
-	else if (n < 0) /*Base condition*/
+	if (n == 0)
+	{
+		return (1);
+	}
+	else if (n < 0)
+	{
 		return (-1);
+	}
 	else
-		return (n * factorial(n - 1)); /*Recursive call*/
+	{
+		x = n * factorial(n - 1);
+	}
+	return (x);
 
 }
