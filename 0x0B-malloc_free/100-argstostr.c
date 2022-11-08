@@ -1,45 +1,39 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- *  argstostr - Concatenates all arguments of the program into a string;
- *   arguments are separated by a new line in the string.
- *   @ac: The number of arguments passed to the program.
- *   @av: An array of pointers to the arguments.
+ *  print_tab - Prints an array of string
+ *  @tab: The array to print
  *
- *   Return: If ac == 0, av == NULL, or the function fails - NULL.
- *   Otherwise - a pointer to the new string.
+ *  Return: nothing
  */
-char *argstostr(int ac, char **av)
+void print_tab(char **tab)
 {
-	char *str;
-	int arg, byte, index, size = ac;
+	  int i;
 
-	if (ac == 0 || av == NULL)
-		return (NULL);
+	  for (i = 0; tab[i] != NULL; ++i)
+	  {
+		   printf("%s\n", tab[i]);
+	  }
 
-	for (arg = 0; arg < ac; arg++)
-	{
-		for (byte = 0; av[arg][byte]; byte++)
-			size++;
-	}
-
-	str = malloc(sizeof(char) * size + 1);
-
-	if (str == NULL)
-		return (NULL);
-
-	index = 0;
-
-	for (arg = 0; arg < ac; arg++)
-	{
-		for (byte = 0; av[arg][byte]; byte++)
-			str[index++] = av[arg][byte];
-
-		str[index++] = '\n';
-	}
-
-	str[size] = '\0';
-
-	return (str);
 }
+
+/**
+ * main - check the code for ALX School students.
+ *
+ * Return: 1 if an error occurred, 0 otherwise
+ */
+int main(void)
+{
+	char **tab;
+
+	 tab = strtow("
+			 if (tab == NULL)
+			 {
+			 printf("Failed\n");
+			 return (1);
+			 }
+			  print_tab(tab);
+			   return (0);
+			   }
