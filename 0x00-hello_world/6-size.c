@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * discription: usaing sizeof to print
+ *
  * Return: Always 0 (Success)
 */
 int main(void)
