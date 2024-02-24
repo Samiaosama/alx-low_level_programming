@@ -5,8 +5,8 @@
 /**
  * main - Entry point
  *
- *discraption: print the last digit of the number stored in the variable.
- *
+ *discraption: print the value of n :
+ *	greater than 5, and is 0, and is less than 6 and not 0
  * Return: Always 0 (Success)
  */
 int main(void)
