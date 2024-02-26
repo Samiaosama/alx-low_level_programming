@@ -4,8 +4,11 @@
  * main - check the code.
  *
  * _is lower - function to check if
- * 		character is lowercase
- * Return: Always 0.
+ * character is lowercase
+ *
+ * @c: check input of function
+ *
+ * Return: return 1 if c - Returns 0 otherwise
  */
 
 int _islower(int c)
