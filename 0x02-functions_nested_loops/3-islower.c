@@ -3,6 +3,8 @@
 /**
  * main - check the code.
  *
+ * _is lower - function to check if
+ * 		character is lowercase
  * Return: Always 0.
  */
 
